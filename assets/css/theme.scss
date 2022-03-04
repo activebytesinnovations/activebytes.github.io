@@ -1,0 +1,631 @@
+/*
+Theme Name: Activebytes
+Written by Vimod Mohan
+*/
+
+// Import necessary bootstrap functions and variables
+
+$primary: #291838;
+$secondary: #f6921e;
+
+@import "../bootstrap/scss/bootstrap.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(255, 255, 255);
+    background: #100719;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 60px;
+}
+h2 {
+    font-size: 50px;
+    line-height: 50px;
+}
+h3 {
+    font-size: 40px;
+}
+h4 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+h5 {
+    font-size: 20px;
+}
+h6 {
+    font-size: 18px;
+}
+
+.info-top {
+    color: #cbcbcb;
+    font-size: 14px;
+    border-bottom: 1px solid #1e3c78;
+    i {
+        color: $secondary;
+    }
+    a {
+        color: #cbcbcb;
+    }
+    background: rgba(16, 7, 25, 0.5);
+    .top-link {
+        text-align: right;
+    }
+}
+
+a,
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+//navbar
+
+.navbar .megamenu {
+    padding: 1rem;
+}
+@media all and (min-width: 992px) {
+    .navbar .has-megamenu {
+        position: static !important;
+    }
+    .navbar .megamenu {
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+}
+@media (max-width: 991px) {
+    .navbar.fixed-top .navbar-collapse,
+    .navbar.sticky-top .navbar-collapse {
+        overflow-y: auto;
+        max-height: 90vh;
+        margin-top: 10px;
+    }
+}
+
+.megamenu {
+    background: #100719;
+    img {
+        max-width: 150px;
+        margin-bottom: 20px;
+    }
+    color: white;
+    ul {
+        list-style: none;
+        margin: unset;
+        padding: unset;
+        li {
+            border-bottom: 1px dashed $primary;
+            padding: 10px 0;
+            a {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+.underline {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    position: relative;
+    font-weight: 600;
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: #ffffff;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+
+    &:hover:after {
+        color: rgb(255, 255, 255) !important;
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}
+
+.video_section {
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    z-index: -1000;
+    video,
+    img {
+        animation-name: fadeIn;
+        left: 50%;
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .overlay-gr {
+        position: relative;
+        width: 100%;
+        height: 800px;
+        background: rgb(16, 7, 25);
+        background: linear-gradient(0deg, rgba(16, 7, 25, 1) 0%, rgba(8, 36, 94, 0) 100%);
+    }
+}
+
+.inside-page {
+    max-height: 550px !important;
+    .overlay-inner {
+        height: 550px !important;
+        position: relative;
+        width: 100%;
+        background: rgb(16, 7, 25);
+        background: linear-gradient(0deg, rgba(16, 7, 25, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    }
+}
+
+.inside-page-content {
+    max-height: 400px !important;
+}
+
+.main-content {
+    height: 600px;
+}
+
+//News section
+.news {
+    .news-box {
+        background: $primary;
+        padding: 30px;
+        border-radius: 4px;
+        h4 {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        color: $secondary;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    i {
+        font-size: 60px;
+        color: $secondary;
+        margin-right: 20px;
+    }
+}
+
+//cybot
+
+.cybot {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 100px 0;
+    .cybot-logo {
+        padding-left: 30px;
+    }
+    .elements {
+        position: absolute;
+        right: 0;
+        z-index: -1000;
+        img {
+            max-width: 400px;
+            margin-bottom: 60px;
+        }
+    }
+}
+
+//cybot features
+
+.cybot-features {
+    background: url(../images/cybot-bg.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    margin-top: 50px;
+    h3 {
+        color: $secondary;
+    }
+    img {
+        max-width: 350px;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+//activebytes
+
+.activebtes {
+    padding-top: 100px;
+    img {
+        border-radius: 6px;
+    }
+}
+
+//company
+
+.company {
+    background: url(../images/company-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    padding: 150px 0;
+}
+
+.mission {
+    margin-top: 100px;
+}
+
+.com-cta {
+    margin-top: 100px;
+    padding: 60px 0;
+    background: #291838;
+    h3 {
+        font-size: 35px;
+    }
+}
+
+//services
+
+.services {
+    .news-box {
+        min-height: 170px;
+        p {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        font-size: 14px;
+        color: #ffffff;
+        font-size: 16px;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        font-weight: 600;
+        &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: #ffffff;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        &:hover:after {
+            color: rgb(255, 255, 255) !important;
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+
+//support
+
+.support {
+    i {
+        color: #fff;
+    }
+}
+
+//cybot page
+
+.platform {
+    margin-top: 100px;
+    padding: 60px 0;
+}
+
+//modules
+
+.cybot-modules {
+    max-width: 800px;
+    margin: 80px auto;
+    i {
+        display: block;
+        font-size: 60px;
+        margin-bottom: 30px;
+        color: $secondary;
+    }
+}
+
+//models
+.modal-content {
+    background: $primary;
+}
+
+.modal-header {
+    border-bottom: 1px solid #3c3550;
+}
+
+.modal-footer {
+    border-top: 1px solid #3c3550;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: $secondary;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+    &:hover {
+        background-color: $primary;
+    }
+}
+
+//footer
+
+footer {
+    margin-top: 100px;
+    .widget {
+        h5 {
+            font-size: 16px;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 30px;
+        li {
+            padding: 2px;
+            a {
+                font-size: 14px;
+                color: #9f9f9f;
+                font-size: 14px;
+                display: inline-block;
+                position: relative;
+                font-weight: 600;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 1px;
+                    bottom: 0;
+                    left: 0;
+                    background-color: #ffffff;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+
+                &:hover:after {
+                    color: rgb(255, 255, 255) !important;
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .footer-info {
+        border-top: 1px solid $primary;
+        margin-top: 30px;
+        font-size: 14px;
+        color: #9f9f9f;
+        a {
+            color: #9f9f9f;
+        }
+        .footer-link {
+            text-align: right;
+        }
+    }
+}
+
+//bottom stack nav
+.stack-menu {
+    position: fixed;
+    width: 100%;
+    border-top: 1px solid $secondary;
+    z-index: 500;
+    padding: 6px 20px;
+    bottom: 0;
+    background: $primary;
+    a {
+        font-size: 22px;
+        display: block;
+        width: 100%;
+    }
+    span {
+        font-size: 10px;
+        display: block;
+        width: 100%;
+        line-height: 15px;
+    }
+}
+
+//overlay nav
+.overlay {
+    height: 100%;
+    width: 70%;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    background: $primary;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: none;
+}
+
+i.bi.bi-x {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 30px;
+}
+
+img.brand-circle {
+    max-width: 65px;
+}
+
+.sidenav {
+    list-style: none;
+    padding-left: unset;
+    height: 350px;
+    li {
+        line-height: 40px;
+        border-bottom: 1px solid #583774;
+        a {
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+.underline-con{
+    background: #6b46af;
+    display: block;
+    height: 1px;
+    margin: 30px 0;
+}
+
+.contact{
+    text-align: center;
+    color: $secondary;
+    a{
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    i{
+        font-size: 18px!important;
+        margin-right: 0;
+    }
+}
+
+.contactus{
+    margin-bottom: 100px;
+}
+
+//Responsive
+
+@media (max-width: 600px) {
+    //top link
+    .top-link,
+    .emerency {
+        text-align: center !important;
+    }
+    .main-content {
+        height: 500px;
+        text-align: center;
+        h1 {
+            font-size: 40px;
+            line-height: 40px;
+        }
+    }
+    .brand {
+        text-align: center;
+    }
+    .inside-page {
+        max-height: 400px !important;
+        h1 {
+            font-size: 30px !important;
+        }
+    }
+
+    //cybot section
+    .cybot {
+        //text-align: center;
+        margin-top: 0 !important;
+        h3 {
+            font-size: 30px;
+        }
+    }
+    .elements {
+        display: none;
+    }
+    .cybot-logo {
+        padding-left: 0 !important;
+        margin-top: 50px;
+        max-width: 180px;
+    }
+    .feature {
+        max-width: 300px;
+    }
+
+    //cybot features
+
+    .cybot-features {
+        margin-top: 0 !important;
+        img {
+            max-width: 250px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    //footer
+
+    .footer-info {
+        text-align: center !important;
+    }
+    .footer-link {
+        text-align: center !important;
+    }
+
+    footer {
+        text-align: center !important;
+    }
+} //end
+
+@media (min-width: 800px) {
+    .stack-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    footer {
+        display: none;
+    }
+    .com-cta {
+        padding-bottom: 140px;
+    }
+}

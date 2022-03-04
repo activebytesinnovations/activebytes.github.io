@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="369.364" height="229.743" viewBox="0 0 369.364 229.743">
+  <g id="robot" transform="translate(0 0)">
+    <path id="Path_30" data-name="Path 30" d="M19.966,57.273A25.542,25.542,0,1,0,45.51,31.733a25.572,25.572,0,0,0-25.544,25.54" transform="translate(63.532 57.599)" fill="#fff"/>
+    <path id="Path_31" data-name="Path 31" d="M107.223,57.273A25.542,25.542,0,1,0,81.68,82.812a25.572,25.572,0,0,0,25.544-25.54" transform="translate(178.638 57.599)" fill="#fff"/>
+    <path id="Path_32" data-name="Path 32" d="M0,125.244A115,115,0,0,0,114.872,240.115h59.635V205.848H114.872a80.606,80.606,0,1,1,0-161.212h59.635V10.372H114.872A115,115,0,0,0,0,125.244" transform="translate(0 -10.372)" fill="#f6921e"/>
+    <path id="Path_33" data-name="Path 33" d="M106.229,10.373H46.594V44.632h59.635a80.606,80.606,0,0,1,0,161.212H46.594v34.267h59.635a114.869,114.869,0,1,0,0-229.739" transform="translate(148.263 -10.369)" fill="#f6921e"/>
+  </g>
+</svg>
