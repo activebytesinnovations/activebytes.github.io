@@ -10829,6 +10829,10 @@ h6, .h6 {
   font-size: 18px;
 }
 
+a.nav-link.active {
+  color: #f6921e;
+}
+
 .info-top {
   color: #cbcbcb;
   font-size: 14px;
@@ -10992,23 +10996,23 @@ a:hover {
   height: 600px;
 }
 
-.news .news-box {
+.box-container .box {
   background: #291838;
   padding: 30px;
   border-radius: 4px;
 }
 
-.news .news-box h4, .news .news-box .h4 {
+.box-container .box h4, .box-container .box .h4 {
   margin-bottom: 0;
 }
 
-.news a {
+.box-container a {
   color: #f6921e;
   font-size: 12px;
   text-decoration: none;
 }
 
-.news i {
+.box-container i {
   font-size: 60px;
   color: #f6921e;
   margin-right: 20px;
@@ -11143,6 +11147,29 @@ a:hover {
 .platform {
   margin-top: 100px;
   padding: 60px 0;
+}
+
+.platform-list {
+  margin-bottom: 120px;
+}
+
+.platform-list a {
+  font-size: unset;
+}
+
+.platform-list .box {
+  min-height: 480px;
+}
+
+.modules .content {
+  width: 100%;
+}
+
+.overview {
+  padding: 100px 0;
+  margin-bottom: 120px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(41, 24, 56, 0.5)), to(rgba(16, 7, 25, 0)));
+  background: linear-gradient(0deg, rgba(41, 24, 56, 0.5) 0%, rgba(16, 7, 25, 0) 100%);
 }
 
 .cybot-modules {

@@ -56,6 +56,10 @@ h6 {
     font-size: 18px;
 }
 
+a.nav-link.active{
+    color: $secondary;
+}
+
 .info-top {
     color: #cbcbcb;
     font-size: 14px;
@@ -198,8 +202,9 @@ a:hover {
 }
 
 //News section
-.news {
-    .news-box {
+
+.box-container {
+    .box {
         background: $primary;
         padding: 30px;
         border-radius: 4px;
@@ -346,7 +351,28 @@ a:hover {
 
 .platform {
     margin-top: 100px;
-    padding: 60px 0;
+    padding: 60px 0;    
+}
+.platform-list{
+    margin-bottom: 120px;
+    a{
+        font-size: unset;
+    }
+    .box{
+        min-height: 480px;
+    }
+}
+
+.modules{
+    .content{
+        width: 100%;
+    }
+}
+
+.overview{
+    padding: 100px 0;
+    margin-bottom: 120px;
+    background: linear-gradient(0deg, rgba(41, 24, 56, .5) 0%, rgba(16, 7, 25, 0) 100%);
 }
 
 //modules
