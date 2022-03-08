@@ -11092,11 +11092,11 @@ a:hover {
   font-size: 35px;
 }
 
-.services .news-box {
+.services .box {
   min-height: 170px;
 }
 
-.services .news-box p {
+.services .box p {
   margin-bottom: 0;
 }
 
@@ -11119,7 +11119,7 @@ a:hover {
   height: 3px;
   bottom: 0;
   left: 0;
-  background-color: #ffffff;
+  background-color: #f6921e;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
   -webkit-transition: -webkit-transform 0.25s ease-out;
