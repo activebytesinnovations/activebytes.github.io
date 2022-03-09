@@ -420,6 +420,18 @@ a:hover {
     }
 }
 
+//single page
+.single-page{
+    .card{
+        i{
+            display: block;
+            font-size: 40px;
+            color: $secondary;
+        }
+    }
+}
+
+
 //footer
 
 footer {

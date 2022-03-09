@@ -11216,6 +11216,12 @@ a:hover {
   background-color: #291838;
 }
 
+.single-page .card i {
+  display: block;
+  font-size: 40px;
+  color: #f6921e;
+}
+
 footer {
   margin-top: 100px;
 }
