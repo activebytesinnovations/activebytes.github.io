@@ -11019,8 +11019,6 @@ a:hover {
 }
 
 .cybot {
-  margin-top: 100px;
-  margin-bottom: 50px;
   padding: 100px 0;
 }
 
@@ -11047,7 +11045,7 @@ a:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 80px 0;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .cybot-features h3, .cybot-features .h3 {
@@ -11395,7 +11393,7 @@ img.brand-circle {
     text-align: center;
   }
   .main-content h1, .main-content .h1 {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 40px;
   }
   .brand {
@@ -11409,9 +11407,14 @@ img.brand-circle {
   }
   .cybot {
     margin-top: 0 !important;
+    padding-top: 0;
+    padding-bottom: 50px;
   }
   .cybot h3, .cybot .h3 {
     font-size: 30px;
+  }
+  .cybot h2, .cybot .h2 {
+    font-size: 36px;
   }
   .elements {
     display: none;
@@ -11432,6 +11435,7 @@ img.brand-circle {
   }
   .cybot-features h3, .cybot-features .h3 {
     font-size: 30px;
+    margin-top: 50px;
   }
   .footer-info {
     text-align: center !important;
@@ -11441,6 +11445,28 @@ img.brand-circle {
   }
   footer {
     text-align: center !important;
+  }
+  .activebtes img {
+    margin-top: 30px;
+  }
+  .overview {
+    padding-top: 0;
+  }
+  .platform {
+    margin-top: 0;
+  }
+  .platform-list {
+    margin-bottom: 0;
+  }
+  .services {
+    margin-top: 0;
+  }
+  .mission {
+    margin-top: 0;
+  }
+  .company {
+    margin-top: 0;
+    padding-top: 50px;
   }
 }
 
