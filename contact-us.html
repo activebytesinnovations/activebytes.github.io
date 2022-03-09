@@ -103,7 +103,8 @@
             </div>
             <div class="col-12 col-md-4 text-right align-self-center">
                 <a href="support.html" type="button" class="btn bg-white px-3 text-dark">Support</a>
-                <a href="get-demo.html" target="_blank" type="button" class="btn btn-secondary px-3 text-white">Get a Demo</a>
+                <a href="#" target="_blank" type="button" class="btn btn-secondary px-3 text-white"
+                data-bs-toggle="modal" data-bs-target="#ticket">Get a Demo</a>
             </div>
         </div>
     </header>
@@ -133,43 +134,38 @@
     <section class="box-container support contactus">
         <div class="container">
             <div class="row">
-                <div class="col-12 mt-2">
+                <div class="col-12 col-md-5 mb-3">
                     <div class="box">
                         <div class="row">
                             <div class="col-12 col-md-4">
-                                <h5>United Arab Emirates</h5>
-                                <p></p>
-                            </div>
-
-                            <div class="col-12 col-md-4">
-                                <h5>India</h5>
-                                <p></p>
-                            </div>
-
-                            <div class="col-12 col-md-4">
-                                <h5>United States of America</h5>
-                                <p></p>
+                                
                             </div>
                         </div>
-
 
                         <div class="underline-con"></div>
                         <div class="contact">
                             <div class="row">
-                                <div class="col-12 col-md-6">
+                                <div class="col-12">
                                     <a href="mailto:contact@active-bytes.com" target="_blank">
                                         <i class="bi bi-envelope"></i> contact@active-bytes.com
                                     </a>
                                 </div>
-                                <div class="col-12 col-md-6">
+                                <div class="col-12">
                                     <a href="tel:+971 50 513 3973"><i class="bi bi-telephone"></i> +971 50 513 3973</a>
                                 </div>
                             </div>
                            
-                        </div>
-
+                        </div>                        
                     </div>
                 </div>
+
+                <div class="col-12 col-md-7">
+                    <div class="box">
+                        <script src="https://desk.zoho.in/portal/api/feedbackwidget/65478000000129173?orgId=60013349795&displayType=embeded"></script>
+                        <div id="zsfeedbackwidgetdiv"></div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -187,7 +183,7 @@
                         <li><a href="company.html">Profile</a></li>
                         <li><a href="contact-us.html">Contact us</a></li>
                         <li><a href="#">Careers</a></li>
-                        <li><a href="#">News</a></li>
+                        
                     </ul>
                 </div>
             </div>
@@ -293,7 +289,7 @@
 
                     <div class="mob-con align-self-end">
                         <a href="support.html" class="btn btn-secondary">Support</a>
-                        <a href="get-demo.html" target="_blank" class="btn bg-white text-dark ml-2">Get a
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#ticket" class="btn bg-white text-dark ml-2">Get a
                             Demo</a>
                     </div>
                 </div>
@@ -302,6 +298,66 @@
     </div>
 </div>
 
+<!-- Support ticket popup -->
+
+<div class="modal fade" id="ticket" tabindex="-1" aria-labelledby="ticket" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-black" id="ticket">Request a Demo</h5>
+            </div>
+            <div class="modal-body p-4">                  
+                <div id='zohoSupportWebToCase'>
+                    <form name='zsWebToCase_65478000000149001' id='zsWebToCase_65478000000149001'
+                        action='https://support.active-bytes.com/support/WebToCase' method='POST'
+                        onSubmit='return zsValidateMandatoryFields()' enctype='multipart/form-data'> <input
+                            type='hidden' name='xnQsjsdp' value='edbsnf9ba36df322bdfad2bb3276d2c462bdc' /> <input
+                            type='hidden' name='xmIwtLD'
+                            value='edbsn1823881b847bd663c80c6f0a18293f86778426497a3d3499652b7497b87af8fd' /> <input
+                            type='hidden' name='xJdfEaS' value='' /> <input type='hidden' name='actionType'
+                            value='Q2FzZXM=' /> <input type="hidden" id="property(module)" value="Cases" /> <input
+                            type="hidden" id="dependent_field_values_Cases"
+                            value="&#x7b;&quot;JSON_VALUES&quot;&#x3a;&#x7b;&#x7d;,&quot;JSON_SELECT_VALUES&quot;&#x3a;&#x7b;&#x7d;,&quot;JSON_MAP_DEP_LABELS&quot;&#x3a;&#x5b;&#x5d;&#x7d;" />
+                        <input type='hidden' name='returnURL' value='https&#x3a;&#x2f;&#x2f;active-bytes.com' />
+                            <div class="row">
+                            <div class="col-12">
+                            <input type='text' maxlength='120' name='First Name' value='' class='form-control' placeholder="First Name" /> 
+                            </div>                        
+                            <div class="col-12 mt-2">
+                            <input type='text' maxlength='120' name='Contact Name' class='form-control' placeholder="Last Name" />
+                            </div>
+                            <div class="col-12 mt-2">
+                            <input type='text' maxlength='120' name='Email' value='' class='form-control' placeholder="Office Email" />
+                            </div>
+                            <div class="col-12 mt-2">
+                            <input type='text' maxlength='120' name='Phone' value='' class='form-control' placeholder="Phone" />
+                            </div>
+                            <div class="col-12 mt-2">
+                            <input type='text' maxlength='255' name='Subject' value='' class='form-control' placeholder="Subject" />
+                            </div>
+                            <div class="col-12 mt-2">
+                            <div id='zsCaptchaLoading'><strong>Loading...<br><br></strong></div>
+                             <div id='zsCaptcha' style='display:none;'><img src='#' id='zsCaptchaUrl'
+                             name="zsCaptchaImage"><a href='javascript:;'
+                             style='color:#ff9100; cursor:pointer; margin-left:10px; vertical-align:middle;text-decoration: none;'
+                             class='zsFontClass' onclick='zsRegenerateCaptcha()'>Refresh</a></div>
+                             <div class="mt-2"><input class='form-control' placeholder="Captcha" type='text' name='zsWebFormCaptchaWord' /><input type='hidden'
+                             name='zsCaptchaSrc' value='' /></div> 
+                             </div>  
+                             <div class="col-12 mt-2">                                
+                             <input type='submit' id="zsSubmitButton_65478000000149001" class='btn btn-secondary'
+                             value='Submit'> &nbsp; &nbsp; <input type='button' class='btn bg-white'
+                              value='Reset' onclick="zsResetWebForm('65478000000149001')">
+                            </div>
+                            </div>
+                    </form>
+                </div>
+                </html>
+             </div>
+        </div>
+    </div>
+</div>
+<!-- Support ticket popup -->
 
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -309,6 +365,10 @@
     <script src="./assets/js/masonry.pkgd.min.js"></script>
     <!-- custom -->
     <script src="./assets/js/custom.js"></script>
+        <!-- REQUEST DEMO -->
+        <script src='https://js.zohostatic.in/support/app/js/jqueryandencoder.ffa5afd5124fbedceea9.js'></script>
+        <script>function trimBoth(str) { return jQuery.trim(str); } function setAllDependancyFieldsMapping() { var mapDependancyLabels = getMapDependenySelectValues(jQuery("[id='property(module)']").val(), "JSON_MAP_DEP_LABELS"); if (mapDependancyLabels) { for (var i = 0; i < mapDependancyLabels.length; i++) { var label = mapDependancyLabels[i]; var obj = document.forms['zsWebToCase_65478000000149001'][label]; if (obj) { setDependent(obj, true); } } } } function getMapDependenySelectValues(module, key) { var dependencyObj = jQuery.parseJSON(jQuery("[id='dependent_field_values_" + module + "']").val()); if (dependencyObj == undefined) { return dependencyObj; } return dependencyObj[key]; } function setDependent(obj, isload) { var name = obj.id || (obj[0] && obj[0].id) || ""; var module = jQuery("[id='property(module)']").val(); var val = ""; var myObject = getMapDependenySelectValues(module, "JSON_VALUES"); if (myObject != undefined) { val = myObject[name]; } var mySelObject = getMapDependenySelectValues(module, "JSON_SELECT_VALUES"); if (val != null && val != "" && val != "null" && mySelObject) { var fields = val; for (var i in fields) { if (fields.hasOwnProperty(i)) { var isDependent = false; var label = i; var values = fields[i]; if (label.indexOf(")") > -1) { label = label.replace(/\)/g, '_____'); } if (label.indexOf("(") > -1) { label = label.replace(/\(/g, '____'); } if (label.indexOf(".") > -1) { label = label.replace(/\./g, '___'); } var depObj = document.forms['zsWebToCase_65478000000149001'][label]; if (depObj && depObj.options) { var mapValues = ""; var selected_val = depObj.value; var depLen = depObj.options.length - 1; for (var n = depLen; n >= 0; n--) { if (depObj.options[n].selected) { if (mapValues == "") { mapValues = depObj.options[n].value; } else { mapValues = mapValues + ";;;" + depObj.options[n].value; } } } depObj.value = ""; var selectValues = mySelObject[label]; for (var k in values) { var rat = k; if (rat == "-None-") { rat = ""; } var parentValues = mySelObject[name]; if (rat == trimBoth(obj.value)) { isDependent = true; depObj.length = 0; var depvalues = values[k]; var depLen = depvalues.length - 1; for (var j = 0; j <= depLen; j++) { var optionElement = document.createElement("OPTION"); var displayValue = depvalues[j]; var actualValue = displayValue; if (actualValue == "-None-") { optionElement.value = ""; displayValue = "-None-"; } else { optionElement.value = actualValue; } optionElement.text = displayValue; if (mapValues != undefined) { var mapValue = mapValues.split(";;;"); var len = mapValue.length; for (var p = 0; p < len; p++) { if (actualValue == mapValue[p]) { optionElement.selected = true; } } } depObj.options.add(optionElement); } } } if (!isDependent) { depObj.length = 0; var len = selectValues.length; for (var j = 0; j < len; j++) { var actualValue = selectValues[j]; var optionElement = document.createElement("OPTION"); if (actualValue == "-None-") { optionElement.value = ""; } else { optionElement.value = selectValues[j]; } optionElement.text = selectValues[j]; depObj.options.add(optionElement); } depObj.value = selected_val; } if (!isload) { setDependent(depObj, false); } var jdepObj = jQuery(depObj); if (jdepObj.hasClass('select2-offscreen')) { jdepObj.select2("val", jdepObj.val()); } } } } } } var zctt = function () { var tt, mw = 400, top = 10, left = 0, doctt = document; var ieb = doctt.all ? true : false; return { showtt: function (cont, wid) { if (tt == null) { tt = doctt.createElement('div'); tt.setAttribute('id', 'tooltip-zc'); doctt.body.appendChild(tt); doctt.onmousemove = this.setpos; doctt.onclick = this.hidett; } tt.style.display = 'block'; tt.innerHTML = cont; tt.style.width = wid ? wid + 'px' : 'auto'; if (!wid && ieb) { tt.style.width = tt.offsetWidth; } if (tt.offsetWidth > mw) { tt.style.width = mw + 'px' } h = parseInt(tt.offsetHeight) + top; w = parseInt(tt.offsetWidth) + left; }, hidett: function () { tt.style.display = 'none'; }, setpos: function (e) { var u = ieb ? event.clientY + doctt.body.scrollTop : e.pageY; var l = ieb ? event.clientX + doctt.body.scrollLeft : e.pageX; var cw = doctt.body.clientWidth; var ch = doctt.body.clientHeight; if (l < 0) { tt.style.left = left + 'px'; tt.style.right = ''; } else if ((l + w + left) > cw) { tt.style.left = ''; tt.style.right = ((cw - l) + left) + 'px'; } else { tt.style.right = ''; tt.style.left = (l + left) + 'px'; } if (u < 0) { tt.style.top = top + 'px'; tt.style.bottom = ''; } else if ((u + h + left) > ch) { tt.style.top = ''; tt.style.bottom = ((ch - u) + top) + 'px'; } else { tt.style.bottom = ''; tt.style.top = (u + top) + 'px'; } } }; }(); var zsWebFormMandatoryFields = new Array("First Name", "Contact Name", "Email", "Subject"); var zsFieldsDisplayLabelArray = new Array("First Name", "Last Name", "Office Email", "Subject"); function zsValidateMandatoryFields() { var name = ''; var email = ''; var isError = 0; for (var index = 0; index < zsWebFormMandatoryFields.length; index++) { isError = 0; var fieldObject = document.forms['zsWebToCase_65478000000149001'][zsWebFormMandatoryFields[index]]; if (fieldObject) { if (((fieldObject.value).replace(/^\s+|\s+$/g, '')).length == 0) { alert(zsFieldsDisplayLabelArray[index] + ' cannot be empty '); fieldObject.focus(); isError = 1; return false; } else { if (fieldObject.name == 'Email') { if (!fieldObject.value.match(/^([\w_][\w\-_.+\'&]*)@(?=.{4,256}$)(([\w]+)([\-_]*[\w])*[\.])+[a-zA-Z]{2,22}$/)) { isError = 1; alert('Enter a valid email-Id'); fieldObject.focus(); return false; } } } if (fieldObject.nodeName == 'SELECT') { if (fieldObject.options[fieldObject.selectedIndex].value == '-None-') { alert(zsFieldsDisplayLabelArray[index] + ' cannot be none'); fieldObject.focus(); isError = 1; return false; } } if (fieldObject.type == 'checkbox') { if (fieldObject.checked == false) { alert('Please accept ' + zsFieldsDisplayLabelArray[index]); fieldObject.focus(); isError = 1; return false; } } } } if (isError == 0) { if (document.forms['zsWebToCase_65478000000149001']['zsWebFormCaptchaWord'].value.replace(/^\s+|\s+$/g, '').length == 0) { alert('Please enter the captcha code.'); document.forms['zsWebToCase_65478000000149001']['zsWebFormCaptchaWord'].focus(); return false; } } if (isError == 0) { document.getElementById('zsSubmitButton_65478000000149001').setAttribute('disabled', 'disabled'); } } function zsShowCaptcha() { jQuery('#zsCaptchaLoading').hide(); jQuery('#zsCaptcha').show(); } function zsRegenerateCaptcha() { var webFormxhr = {}; webFormxhr = new XMLHttpRequest(); webFormxhr.open('GET', 'https://desk.zoho.in/support/GenerateCaptcha?action=getNewCaptcha&_=' + new Date().getTime(), true); webFormxhr.onreadystatechange = function () { if (webFormxhr.readyState === 4 && webFormxhr.status === 200) { try { var response = (webFormxhr.responseText != null) ? JSON.parse(webFormxhr.responseText) : ''; jQuery('#zsCaptchaUrl').load(zsShowCaptcha); document.getElementById('zsCaptchaUrl').src = response.captchaUrl; document.getElementsByName('xJdfEaS')[0].value = response.captchaDigest; } catch (e) { } } }; webFormxhr.send(); } document.addEventListener('readystatechange', function () { if (document.readyState === 'complete' && window.zsRegenerateCaptcha) { zsRegenerateCaptcha(); } setAllDependancyFieldsMapping(); document.getElementById('zsSubmitButton_65478000000149001').removeAttribute('disabled'); zsAttachedAttachmentsCount = 0; zsAttachmentFileBrowserIdsList = [1, 2, 3, 4, 5]; document.forms['zsWebToCase_65478000000149001']['zsWebFormCaptchaWord'].value = ''; }); function zsResetWebForm(webFormId) { document.forms['zsWebToCase_' + webFormId].reset(); document.getElementById('zsSubmitButton_65478000000149001').removeAttribute('disabled'); setAllDependancyFieldsMapping(); } </script>
+    
 
     <script>
         function openNav() {
