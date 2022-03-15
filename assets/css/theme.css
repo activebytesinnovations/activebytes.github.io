@@ -11007,7 +11007,7 @@ a:hover {
 }
 
 .box-container a {
-  color: #f6921e;
+  color: white;
   font-size: 12px;
   text-decoration: none;
 }
@@ -11033,7 +11033,7 @@ a:hover {
 }
 
 .cybot .elements img {
-  max-width: 400px;
+  max-width: 300px;
   margin-bottom: 60px;
 }
 
