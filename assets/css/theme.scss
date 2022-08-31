@@ -210,6 +210,9 @@ a:hover {
         border-radius: 4px;
         h4 {
             margin-bottom: 0;
+            width: 100%;
+            display: block;
+            font-size: 20px;
         }
     }
     a {
@@ -217,10 +220,11 @@ a:hover {
         font-size: 12px;
         text-decoration: none;
     }
-    i {
-        font-size: 60px;
-        color: $secondary;
+    img {
+        max-width: 50px;
+        height: 50px;
         margin-right: 20px;
+        display: block;
     }
 }
 
@@ -716,3 +720,4 @@ img.brand-circle {
 .feedbselefield, .fbtxtnf, .feedbtxtfield, .fbfcaptchaDivimg, .feedtxtarea{
     background-color: unset!important;
 }
+

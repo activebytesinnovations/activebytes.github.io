@@ -11004,6 +11004,9 @@ a:hover {
 
 .box-container .box h4, .box-container .box .h4 {
   margin-bottom: 0;
+  width: 100%;
+  display: block;
+  font-size: 20px;
 }
 
 .box-container a {
@@ -11012,10 +11015,11 @@ a:hover {
   text-decoration: none;
 }
 
-.box-container i {
-  font-size: 60px;
-  color: #f6921e;
+.box-container img {
+  max-width: 50px;
+  height: 50px;
   margin-right: 20px;
+  display: block;
 }
 
 .cybot {
