@@ -11041,6 +11041,10 @@ a:hover {
   margin-bottom: 60px;
 }
 
+.cybot h2, .cybot .h2 {
+  font-size: 40px;
+}
+
 .cybot-features {
   background: url(../images/cybot-bg.jpg);
   background-blend-mode: multiply;
