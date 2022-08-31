@@ -363,11 +363,11 @@ a:hover {
     a{
         font-size: unset;
     }
-    .box{
-        min-height: 480px;
-    }
 }
 
+.m-height{
+    min-height: 480px;
+}
 .modules{
     .content{
         width: 100%;
