@@ -11493,6 +11493,34 @@ img.brand-circle {
   }
 }
 
+.ser-box {
+  padding: 20px 0;
+  border-top: 1px solid #1e3c78;
+}
+
+.ser-box p {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.ser-box img {
+  width: 100px;
+  height: auto;
+}
+
+.ser-box .btn-align {
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .ser-box img {
+    margin-bottom: 20px;
+  }
+  .ser-box .btn-align {
+    text-align: left !important;
+  }
+}
+
 .zsfeedbkrpanel {
   background: #291838 !important;
   border: none !important;
