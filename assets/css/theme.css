@@ -11365,6 +11365,14 @@ img.brand-circle {
   color: #f6921e;
 }
 
+.sidenav .nav-link {
+  padding: 0 !important;
+}
+
+.sidenav ul li {
+  border-bottom: 0 !important;
+}
+
 .underline-con {
   background: #6b46af;
   display: block;
@@ -11519,6 +11527,41 @@ img.brand-circle {
   .ser-box .btn-align {
     text-align: left !important;
   }
+}
+
+.list-ser .card {
+  background: transparent;
+  border: 2px solid #291838;
+  border-radius: 15px;
+  padding: 30px 50px;
+}
+
+.list-ser .card img {
+  width: 128px;
+  margin: 0 auto;
+}
+
+.list-ser .card:hover {
+  color: #f6921e;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 6px 0;
+}
+
+.nav-links li a {
+  font-size: 18px;
+  text-decoration: underline;
+  color: #6b46af;
+}
+
+.nav-links li a:hover {
+  color: #f6921e;
 }
 
 .zsfeedbkrpanel {

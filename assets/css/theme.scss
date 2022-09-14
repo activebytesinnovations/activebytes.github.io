@@ -560,6 +560,17 @@ img.brand-circle {
             }
         }
     }
+
+    .nav-link{
+        padding: 0!important;
+    }
+
+    ul{
+        li{
+            border-bottom: 0!important;
+        }
+    }
+
 }
 
 .underline-con{
@@ -727,6 +738,40 @@ img.brand-circle {
         }
         .btn-align{
             text-align: left!important;
+        }
+    }
+}
+
+.list-ser{
+        .card{
+        background: transparent;
+        border: 2px solid #291838;
+        border-radius: 15px;
+        padding: 30px 50px;
+        
+        img{
+            width: 128px;
+            margin: 0 auto;
+            
+        }
+            &:hover{
+                color: $secondary;
+            }
+    }
+}
+
+.nav-links{
+    list-style: none;
+    padding: 0;
+    li{
+        margin: 6px 0;
+        a{
+            font-size: 18px;
+            text-decoration: underline;
+            color: #6b46af;
+            &:hover{
+                color: $secondary;
+            }
         }
     }
 }
