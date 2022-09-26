@@ -11564,6 +11564,10 @@ img.brand-circle {
   color: #f6921e;
 }
 
+.list-ser p {
+  line-height: 18px;
+}
+
 .zsfeedbkrpanel {
   background: #291838 !important;
   border: none !important;
