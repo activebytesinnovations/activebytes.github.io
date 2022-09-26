@@ -11534,6 +11534,7 @@ img.brand-circle {
   border: 2px solid #291838;
   border-radius: 15px;
   padding: 30px 50px;
+  margin-bottom: 20px;
 }
 
 .list-ser .card img {
@@ -11566,6 +11567,19 @@ img.brand-circle {
 
 .list-ser p {
   line-height: 22px;
+}
+
+.ser-feature .card {
+  background: #1c1325;
+  border: 2px solid #291838;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.ser-feature .card img {
+  width: 40px;
+  margin-bottom: 10px;
 }
 
 .zsfeedbkrpanel {

@@ -748,6 +748,7 @@ img.brand-circle {
         border: 2px solid #291838;
         border-radius: 15px;
         padding: 30px 50px;
+        margin-bottom: 20px;
         
         img{
             width: 128px;
@@ -779,6 +780,20 @@ img.brand-circle {
 .list-ser{
     p{
         line-height: 22px;
+    }
+}
+
+.ser-feature{
+    .card{
+        background: #1c1325;
+        border: 2px solid #291838;
+        border-radius: 15px;
+        padding: 30px;
+        margin-bottom: 20px;
+        img{
+            width: 40px;
+            margin-bottom: 10px;
+        }
     }
 }
 
