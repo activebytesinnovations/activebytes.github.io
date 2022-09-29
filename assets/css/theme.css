@@ -11581,6 +11581,35 @@ img.brand-circle {
   width: 20px;
 }
 
+.accordion-button {
+  width: 100%;
+  text-align: left;
+  border: 2px solid #291838;
+  background: #291838;
+  color: #9e94b2;
+  padding-bottom: 6px;
+  padding-top: 4px;
+  border-radius: 4px;
+}
+
+.accordion-button:focus {
+  outline: none;
+  background: #f6921e;
+  color: black;
+}
+
+.accordion-header {
+  margin-bottom: 10px !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.accordion-body {
+  background: #1f1528;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
 .zsfeedbkrpanel {
   background: #291838 !important;
   border: none !important;
