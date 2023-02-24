@@ -506,7 +506,7 @@ footer {
     position: fixed;
     width: 100%;
     border-top: 1px solid $secondary;
-    z-index: 500;
+    z-index: 9999;
     padding: 6px 20px;
     bottom: 0;
     background: $primary;
@@ -528,7 +528,7 @@ footer {
     height: 100%;
     width: 70%;
     position: fixed;
-    z-index: 999;
+    z-index: 99999;
     top: 0;
     background: $primary;
     overflow-x: hidden;
