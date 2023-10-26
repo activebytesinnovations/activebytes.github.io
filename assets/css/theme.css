@@ -9621,7 +9621,7 @@ footer .footer-info .footer-link {
   position: fixed;
   width: 100%;
   border-top: 1px solid #f6921e;
-  z-index: 9999;
+  z-index: 99998;
   padding: 6px 20px;
   bottom: 0;
   background: #291838;
@@ -9921,4 +9921,9 @@ img.brand-circle {
 
 .feedbselefield, .fbtxtnf, .feedbtxtfield, .fbfcaptchaDivimg, .feedtxtarea {
   background-color: unset !important;
+}
+
+.partner li {
+  margin-bottom: 10px;
+  line-height: 26px;
 }/*# sourceMappingURL=theme.css.map */
