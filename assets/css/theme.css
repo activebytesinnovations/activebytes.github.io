@@ -9826,6 +9826,10 @@ img.brand-circle {
   .ser-box .btn-align {
     text-align: left !important;
   }
+  .partner, .certi {
+    margin-top: 100px;
+    text-align: left;
+  }
 }
 @media (max-width: 1024px) {
   .brand {
