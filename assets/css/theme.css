@@ -9827,6 +9827,16 @@ img.brand-circle {
     text-align: left !important;
   }
 }
+@media (max-width: 1024px) {
+  .brand {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .mob-header {
+    display: none;
+  }
+}
 .list-ser .card {
   background: transparent;
   border: 2px solid #291838;

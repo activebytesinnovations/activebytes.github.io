@@ -36,12 +36,18 @@
 
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-        <!-- top info -->
-        <div class="info-top py-1">
-            <div class="container-fluid px-5">
-                <div class="row">  
-                    <div class="col-12 col-md-6 top-link"><a href="contact-us.html">Contact Us</a>
-                    </div>
+        <!-- mob header -->
+        <div class="mob-header p-4">
+            <div class="row">
+                <div class="col-6">
+                    <a href="index.html">
+                        <img src="./assets/images/logo.svg" class="img-fluid" alt="Activebytes Innovations"
+                            title="Activebytes Innovations">
+                    </a>
+                </div>
+                <div class="col-6 text-right">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#ticket" class="btn bg-secondary text-light ml-2">Get a
+                        Demo</a>
                 </div>
             </div>
         </div>
@@ -89,10 +95,20 @@
                                         </div>
                                     </div> <!-- dropdown-mega-menu.// -->
                                 </li>
-                                <li class="nav-item"> <a class="nav-link"href="services.html">Services</a></li>
-                                <li class="nav-item"> <a class="nav-link"href="managed-services.html">Managed Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="company.html"> Company </a></li>
-                                <li class="nav-item"><a class="nav-link" href="contact-us.html"> Contact us </a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      What we do
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <li><a class="dropdown-item" href="services.html">Services</a></li>
+                                      <li><a class="dropdown-item" href="managed-services.html">Managed Services</a></li>
+                                    </ul>
+                                  </li>
+                         
+                                  <li class="nav-item"><a class="nav-link" href="company.html"> Company </a></li>
+                                  <li class="nav-item"><a class="nav-link" href="certifications.html"> Certification </a></li>
+                                  <li class="nav-item"><a class="nav-link" href="partnership.html"> Partnership </a></li>
+                                  <li class="nav-item"><a class="nav-link" href="contact-us.html"> Contact</a></li>
 
                             </ul>
                         </div> <!-- navbar-collapse.// -->
@@ -470,6 +486,8 @@
                               <li><a href="/services.html">Services</a></li>
                               <li><a href="/managed-services.html">Managed Services</a></li>
                             <li><a href="/company.html">Company</a></li>
+                            <li><a href="/certifications.html">Certifications</a></li>
+                            <li><a href="/partnership.html">Partnership</a></li>
                             <li><a href="/contact-us.html">Contact us</a></li>
                         </ul>
 

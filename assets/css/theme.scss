@@ -615,7 +615,7 @@ img.brand-circle {
     }
     .brand {
         text-align: center;
-    }
+            }
     .inside-page {
         max-height: 400px !important;
         h1 {
@@ -713,6 +713,7 @@ img.brand-circle {
     .com-cta {
         padding-bottom: 140px;
     }
+   
 }
 
 .ser-box {
@@ -740,6 +741,18 @@ img.brand-circle {
             text-align: left!important;
         }
     }
+}
+
+@media (max-width: 1024px) {
+    .brand{
+        display: none;
+    }
+
+}
+@media (min-width: 1024px) {
+.mob-header{
+    display: none;
+}
 }
 
 .list-ser{
